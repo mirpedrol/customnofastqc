@@ -1,3 +1,4 @@
+bump_version: null
 lint:
   files_exist:
   - CODE_OF_CONDUCT.md
@@ -18,8 +19,19 @@ lint:
   nextflow_config:
   - manifest.name
   - manifest.homePage
-nf_core_version: 2.14.1
+nf_core_version: 2.14.2.dev0
+org_path: null
 repository_type: pipeline
 template:
-  prefix: mirpedrol
-  skip: []
+  author: mirpedrol
+  description: this is a custom pipeline where fastqc has been removed and should
+    not be added by the new template update
+  force: false
+  is_nfcore: false
+  name: customnofastqc
+  org: mirpedrol
+  outdir: .
+  skip_features:
+  - fastqc
+  version: 1.0dev
+update: null
